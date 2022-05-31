@@ -1,0 +1,20 @@
+@import url('/assets/css/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Shrikhand&display=swap');
+@import '_variables.scss';
+@import '_global.scss';
+
+/* HEADER */
+.main-header{
+    position: relative;
+
+    &--border-bottom{
+        border-bottom: 4px solid $dark-light;
+    }
+    & a{
+        position: absolute;
+        margin-left: 2rem;
+        color: $dark;
+
+    }
+}

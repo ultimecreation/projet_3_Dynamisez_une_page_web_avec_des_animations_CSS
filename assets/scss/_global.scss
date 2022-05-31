@@ -1,0 +1,72 @@
+/* FONTS */
+* {
+    font-family: 'Roboto', sans-serif;
+    color: $dark;
+
+}
+
+@for $i from 1 to 6 {
+    h#{$i} {
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+/* TEXT */
+.text {
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}
+
+/* VISIBILITY */
+.d {
+    &--none {
+        display: none;
+    }
+
+    &--block {
+        display: block;
+    }
+
+    &--inline-block {
+        display: inline-block;
+    }
+}
+
+/* SIZE */
+.w {
+    &--100 {
+        width: 100%;
+    }
+}
+
+/* POSITIONING */
+.d-flex {
+    display: flex;
+}
+
+.d-flex {
+    &--justify-center {
+        @extend .d-flex;
+        justify-content: center;
+    }
+
+    &--justify-between {
+        @extend .d-flex;
+        justify-content: space-between;
+    }
+
+    &--justify-around {
+        @extend .d-flex;
+        justify-content: space-around;
+    }
+
+    &--align-center {
+        @extend .d-flex;
+        align-items: center;
+    }
+}
