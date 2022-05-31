@@ -20,6 +20,15 @@
     &--right {
         text-align: right;
     }
+    &--grey{
+        color:grey;
+    }
+    &--white{
+        color: white;
+    }
+    &--success{
+        color: green;
+    }
 }
 
 /* VISIBILITY */
@@ -68,5 +77,20 @@
     &--align-center {
         @extend .d-flex;
         align-items: center;
+    }
+}
+.btn{
+    padding: 1rem 1.5rem;
+    border: none;
+
+    &--rounded{
+        border-radius: 25px;
+    }
+    &--linear-lighter-up{
+        background: linear-gradient($secondary,$primary);
+    }
+    &--linear-lighter-down{
+        background: linear-gradient($primary,$secondary);
+
     }
 }

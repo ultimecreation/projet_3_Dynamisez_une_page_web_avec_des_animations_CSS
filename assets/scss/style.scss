@@ -5,16 +5,62 @@
 @import '_global.scss';
 
 /* HEADER */
-.main-header{
+.main-header {
     position: relative;
 
-    &--border-bottom{
-        border-bottom: 4px solid $dark-light;
+    &--border-bottom {
+        border-bottom: 4px solid $grey-dark;
     }
-    & a{
+
+    & a {
         position: absolute;
         margin-left: 2rem;
         color: $dark;
 
     }
+}
+
+.hero {
+    @extend .text--center;
+
+    &__search {
+        background: $grey-light;
+        margin: 0 auto;
+
+        &>i {
+            padding: 0.8rem 0 1rem 1rem;
+        }
+
+        &>input {
+            background: $grey-light;
+            border: none;
+            font-weight: bold;
+
+            &::placeholder {
+                padding: 1rem;
+            }
+        }
+    }
+
+    &__cta {
+        padding: 2rem;
+
+        & p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin-bottom: 0rem;
+        }
+
+        & p:nth-of-type(2) {
+            @extend .text--grey;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        & button {
+            @extend .text--white;
+            font-weight: bold;
+        }
+    }
+
 }
