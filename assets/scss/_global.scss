@@ -5,10 +5,9 @@
 
 }
 
-@for $i from 1 to 6 {
-    h#{$i} {
-        font-family: 'Shrikhand', cursive;
-    }
+h1 {
+    font-family: 'Shrikhand', cursive;
+
 }
 
 /* TEXT */
@@ -20,14 +19,45 @@
     &--right {
         text-align: right;
     }
-    &--grey{
-        color:grey;
+
+    &--grey {
+        color: grey;
     }
-    &--white{
+
+    &--white {
         color: white;
     }
-    &--success{
+
+    &--success {
         color: green;
+    }
+}
+
+/* BUTTONS */
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+
+    &--rounded {
+        border-radius: 25px;
+    }
+
+    &--linear-lighter-up {
+        background: linear-gradient($secondary, $primary);
+    }
+
+    &--linear-lighter-down {
+        background: linear-gradient($primary, $secondary);
+
+    }
+}
+
+/* LISTS */
+.list {
+
+    &--unstyled {
+        list-style: none;
+        padding: 0;
     }
 }
 
@@ -43,13 +73,6 @@
 
     &--inline-block {
         display: inline-block;
-    }
-}
-
-/* SIZE */
-.w {
-    &--100 {
-        width: 100%;
     }
 }
 
@@ -79,18 +102,9 @@
         align-items: center;
     }
 }
-.btn{
-    padding: 1rem 1.5rem;
-    border: none;
 
-    &--rounded{
-        border-radius: 25px;
-    }
-    &--linear-lighter-up{
-        background: linear-gradient($secondary,$primary);
-    }
-    &--linear-lighter-down{
-        background: linear-gradient($primary,$secondary);
 
-    }
+.icon-container {
+    width: 1rem;
+    height: 1rem;
 }

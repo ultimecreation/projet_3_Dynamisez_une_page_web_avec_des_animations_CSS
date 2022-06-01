@@ -11,22 +11,6 @@ h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-h2 {
-  font-family: 'Shrikhand', cursive;
-}
-
-h3 {
-  font-family: 'Shrikhand', cursive;
-}
-
-h4 {
-  font-family: 'Shrikhand', cursive;
-}
-
-h5 {
-  font-family: 'Shrikhand', cursive;
-}
-
 /* TEXT */
 .text--center, .hero {
   text-align: center;
@@ -36,16 +20,42 @@ h5 {
   text-align: right;
 }
 
-.text--grey, .hero__cta p:nth-of-type(2) {
+.text--grey, .hero__cta p, .functioning ul li span:nth-of-type(2) {
   color: grey;
 }
 
-.text--white, .hero__cta button {
+.text--white, .hero__cta button, .functioning ul li span:nth-of-type(1) {
   color: white;
 }
 
 .text--success {
   color: green;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.btn--rounded {
+  border-radius: 25px;
+}
+
+.btn--linear-lighter-up {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+.btn--linear-lighter-down {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+/* LISTS */
+.list--unstyled {
+  list-style: none;
+  padding: 0;
 }
 
 /* VISIBILITY */
@@ -59,11 +69,6 @@ h5 {
 
 .d--inline-block {
   display: inline-block;
-}
-
-/* SIZE */
-.w--100 {
-  width: 100%;
 }
 
 /* POSITIONING */
@@ -96,23 +101,9 @@ h5 {
           align-items: center;
 }
 
-.btn {
-  padding: 1rem 1.5rem;
-  border: none;
-}
-
-.btn--rounded {
-  border-radius: 25px;
-}
-
-.btn--linear-lighter-up {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-
-.btn--linear-lighter-down {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+.icon-container {
+  width: 1rem;
+  height: 1rem;
 }
 
 /* HEADER */
@@ -165,18 +156,57 @@ h5 {
   padding: 2rem;
 }
 
-.hero__cta p:nth-of-type(1) {
+.hero__cta h2 {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 0rem;
 }
 
-.hero__cta p:nth-of-type(2) {
+.hero__cta p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
 .hero__cta button {
   font-weight: bold;
+}
+
+.functioning {
+  padding: 1rem;
+}
+
+.functioning ul li {
+  -webkit-box-shadow: 1px 4px 6px #d9d9d9;
+          box-shadow: 1px 4px 6px #d9d9d9;
+  width: 98%;
+  padding: 1rem 0;
+  margin: 1rem 0.5rem;
+  border-radius: 15px;
+}
+
+.functioning ul li span {
+  position: relative;
+  left: -2.2rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 1.6rem;
+}
+
+.functioning ul li span:nth-of-type(1) {
+  background: #9356dc;
+  padding: .15rem .45rem;
+  border-radius: 50%;
+}
+
+.functioning ul li span:nth-of-type(3) {
+  font-weight: bold;
+}
+
+.functioning ul li:hover {
+  background: rgba(147, 86, 220, 0.1);
+}
+
+.restaurants {
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
