@@ -209,4 +209,12 @@ h1 {
 .restaurants {
   padding: 1rem;
 }
+
+.restaurants article {
+  width: 100%;
+}
+
+.restaurants article img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
