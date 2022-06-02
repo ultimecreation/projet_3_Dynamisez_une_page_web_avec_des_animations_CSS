@@ -101,6 +101,10 @@ h1 {
         @extend .d-flex;
         align-items: center;
     }
+    &--flex-flow-column{
+        @extend .d-flex;
+        flex-flow: column-reverse;
+    }
 }
 
 
