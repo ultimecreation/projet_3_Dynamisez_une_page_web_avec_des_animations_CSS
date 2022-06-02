@@ -20,7 +20,7 @@ h1 {
   text-align: right;
 }
 
-.text--grey, .hero__cta p, .functioning ul li span:nth-of-type(2), .restaurants article header span {
+.text--grey, .hero__cta p, .functioning ul li span:nth-of-type(2), .restaurants .restaurant .restaurant__header span {
   color: grey;
 }
 
@@ -111,6 +111,34 @@ h1 {
 .icon-container {
   width: 1rem;
   height: 1rem;
+}
+
+.slide-up {
+  position: relative;
+  -webkit-animation: slideUp 1s ease-in-out;
+          animation: slideUp 1s ease-in-out;
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    top: 100px;
+    opacity: 0.1;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    top: 100px;
+    opacity: 0.1;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* HEADER */
@@ -217,7 +245,7 @@ h1 {
   padding: 1rem;
 }
 
-.restaurants article {
+.restaurants .restaurant {
   width: 100%;
   margin: 1rem 0;
   border-radius: 15px;
@@ -226,19 +254,19 @@ h1 {
   overflow: hidden;
 }
 
-.restaurants article figure {
+.restaurants .restaurant figure {
   margin: 0;
   position: relative;
 }
 
-.restaurants article figure img {
+.restaurants .restaurant figure img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 206px;
 }
 
-.restaurants article figure figcaption {
+.restaurants .restaurant figure figcaption {
   position: absolute;
   top: 2.5rem;
   right: 2rem;
@@ -249,15 +277,15 @@ h1 {
   color: #046332;
 }
 
-.restaurants article header {
+.restaurants .restaurant .restaurant__header {
   padding: 1rem 1.5rem;
 }
 
-.restaurants article header h3 {
+.restaurants .restaurant .restaurant__header h3 {
   margin: 0 0 0.5rem 0;
 }
 
-.restaurants article header span i::after {
+.restaurants .restaurant .restaurant__header span i::after {
   content: '';
   position: relative;
   background: url("../icons/heart-regular.svg");
@@ -266,7 +294,7 @@ h1 {
   height: 20px;
 }
 
-.restaurants article header span i:hover::after {
+.restaurants .restaurant .restaurant__header span i:hover::after {
   background: url("../icons/heart-solid.svg");
 }
 
@@ -316,16 +344,16 @@ h1 {
   background: url("../icons/heart-solid.svg");
 }
 
-article {
+.meal {
   margin-bottom: 3rem;
 }
 
-article header {
+.meal header {
   border-bottom: 4px solid #99E2D0;
   width: 4rem;
 }
 
-article header h2 {
+.meal header h2 {
   margin-bottom: 0.5rem;
 }
 
