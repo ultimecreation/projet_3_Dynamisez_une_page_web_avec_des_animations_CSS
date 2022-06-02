@@ -144,9 +144,9 @@
 
             span i {
                 
-                &::after {position: relative;
-                z-index: 10000;
+                &::after {
                     content: '';
+                    position: relative;
                     background: url("../icons/heart-regular.svg");
                     display: block;
                     width: 20px;

@@ -258,9 +258,8 @@ h1 {
 }
 
 .restaurants article header span i::after {
-  position: relative;
-  z-index: 10000;
   content: '';
+  position: relative;
   background: url("../icons/heart-regular.svg");
   display: block;
   width: 20px;
@@ -287,5 +286,116 @@ h1 {
 
 .footer li a {
   text-decoration: none;
+}
+
+/* PAGE HEADER IMAGE */
+.top-image {
+  margin: 0;
+  width: 100%;
+}
+
+.top-image img {
+  width: 100%;
+}
+
+/* MENU */
+.menu {
+  padding: 1rem;
+}
+
+.menu header span i::after {
+  content: '';
+  position: relative;
+  background: url("../icons/heart-regular.svg");
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu header span i:hover::after {
+  background: url("../icons/heart-solid.svg");
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+article header {
+  border-bottom: 4px solid #99E2D0;
+  width: 4rem;
+}
+
+article header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.meal-card {
+  position: relative;
+  overflow: hidden;
+  width: 92%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  -webkit-box-shadow: 1px 4px 6px #d9d9d9;
+          box-shadow: 1px 4px 6px #d9d9d9;
+  border-radius: 15px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.meal-card .meal-card__left {
+  width: 100%;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.meal-card .meal-card__left p,
+.meal-card .meal-card__left ul {
+  margin: 0;
+}
+
+.meal-card .meal-card__left > p, .meal-card .meal-card__left .meal__price p {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.meal-card .meal-card__left .meal__toppins {
+  font-size: .8rem;
+}
+
+.meal-card .meal-card__right {
+  position: absolute;
+  right: -75px;
+  background: #99E2D0;
+  display: block;
+  height: 75px;
+  width: 75px;
+  -webkit-transform: rotateZ(-180deg);
+          transform: rotateZ(-180deg);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+
+.meal-card .meal-card__right i {
+  position: absolute;
+  -webkit-transform: translate(120%, 105%);
+          transform: translate(120%, 105%);
+  background: white;
+  border-radius: 50%;
+  color: #99E2D0;
+  padding: 0.25rem;
+}
+
+.meal-card:hover .meal-card__left {
+  width: 80%;
+}
+
+.meal-card:hover .meal-card__right {
+  right: 0px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
 }
 /*# sourceMappingURL=style.css.map */
