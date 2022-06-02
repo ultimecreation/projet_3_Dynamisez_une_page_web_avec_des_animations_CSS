@@ -36,6 +36,8 @@ h1 {
 .btn {
   padding: 1rem 2rem;
   border: none;
+  -webkit-box-shadow: 1px 4px 6px #d9d9d9;
+          box-shadow: 1px 4px 6px #d9d9d9;
 }
 
 .btn--rounded {
@@ -45,6 +47,17 @@ h1 {
 .btn--linear-lighter-up {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease,-webkit-box-shadow 0.5s ease;
+  transition: opacity 0.5s ease,-webkit-box-shadow 0.5s ease;
+  transition: opacity 0.5s ease,box-shadow 0.5s ease;
+  transition: opacity 0.5s ease,box-shadow 0.5s ease,-webkit-box-shadow 0.5s ease;
+}
+
+.btn--linear-lighter-up:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 2px 6px 10px #222;
+          box-shadow: 2px 6px 10px #222;
 }
 
 .btn--linear-lighter-down {
@@ -113,10 +126,22 @@ h1 {
   height: 1rem;
 }
 
-.slide-up {
+.slide-up-fast {
   position: relative;
   -webkit-animation: slideUp 1s ease-in-out;
           animation: slideUp 1s ease-in-out;
+}
+
+.slide-up-medium {
+  position: relative;
+  -webkit-animation: slideUp 2s ease-in-out;
+          animation: slideUp 2s ease-in-out;
+}
+
+.slide-up-slow {
+  position: relative;
+  -webkit-animation: slideUp 3s ease-in-out;
+          animation: slideUp 3s ease-in-out;
 }
 
 @-webkit-keyframes slideUp {

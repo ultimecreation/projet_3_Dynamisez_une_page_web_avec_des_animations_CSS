@@ -1,6 +1,14 @@
-.slide-up {
+.slide-up-fast {
     position: relative;
     animation: slideUp 1s ease-in-out;
+}
+.slide-up-medium {
+    position: relative;
+    animation: slideUp 2s ease-in-out;
+}
+.slide-up-slow {
+    position: relative;
+    animation: slideUp 3s ease-in-out;
 }
 
 @keyframes slideUp {
