@@ -24,7 +24,7 @@ h1 {
   color: grey;
 }
 
-.text--white, .hero__cta button, .functioning ul li span:nth-of-type(1) {
+.text--white, .hero__cta button, .functioning ul li span:nth-of-type(1), .footer * {
   color: white;
 }
 
@@ -257,7 +257,35 @@ h1 {
   margin: 0 0 0.5rem 0;
 }
 
-.restaurants article header span i:hover {
-  color: #000;
+.restaurants article header span i::after {
+  position: relative;
+  z-index: 10000;
+  content: '';
+  background: url("../icons/heart-regular.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.restaurants article header span i:hover::after {
+  background: url("../icons/heart-solid.svg");
+}
+
+.footer {
+  background-color: #222;
+  padding: 1rem;
+}
+
+.footer li {
+  margin: 0.25rem 0;
+}
+
+.footer li span {
+  width: 20px;
+  margin-right: 4px;
+}
+
+.footer li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
