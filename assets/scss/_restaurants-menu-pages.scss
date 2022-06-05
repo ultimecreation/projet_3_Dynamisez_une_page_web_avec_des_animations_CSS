@@ -2,15 +2,21 @@
 .top-image {
     margin: 0;
     width: 100%;
-
+   
     img {
         width: 100%;
+        height: 260px;
+        object-fit: cover;
     }
 }
 
 /* MENU */
 .menu {
     padding: 1rem;
+    position: relative;
+    background: white;
+    border-radius: 25px 25px 0 0 ;
+    top:-2rem;
 
     header span i {
 

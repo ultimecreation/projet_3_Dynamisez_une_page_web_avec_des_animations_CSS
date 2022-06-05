@@ -394,11 +394,18 @@ html {
 
 .top-image img {
   width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* MENU */
 .menu {
   padding: 1rem;
+  position: relative;
+  background: white;
+  border-radius: 25px 25px 0 0;
+  top: -2rem;
 }
 
 .menu header span i::after {
