@@ -23,3 +23,27 @@
 
     }
 }
+
+.spinner{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 2200px;
+    z-index: 1;
+    text-align: center;
+    background: pink;
+    animation: spinerUp 3s ease forwards;
+    h1{
+        margin: 20rem;
+    }
+}
+
+@keyframes spinerUp{
+    from{
+        opacity: 1;
+    } 95%{
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
