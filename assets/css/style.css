@@ -170,39 +170,59 @@ h1 {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 2200px;
+  height: 100vh;
   z-index: 1;
   text-align: center;
-  background: pink;
+  background: #222;
+  opacity: 0.9;
+  text-align: center;
   -webkit-animation: spinerUp 3s ease forwards;
           animation: spinerUp 3s ease forwards;
 }
 
 .spinner h1 {
-  margin: 20rem;
+  padding-top: 50%;
+  color: white;
+}
+
+.spinner #loading {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #9356dc;
+  border-radius: 50%;
+  border-top-color: white;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
 }
 
 @-webkit-keyframes spinerUp {
   from {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
+    visibility: visible;
   }
   to {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
 @keyframes spinerUp {
   from {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
+    visibility: visible;
   }
   to {
-    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 
