@@ -452,6 +452,10 @@ html {
   transition: width 0.5s ease;
 }
 
+.meal-card .meal__data p:first-child {
+  font-weight: bold;
+}
+
 .meal-card .meal__toppins {
   margin-top: 0.25rem;
   font-size: 0.8rem;
@@ -498,7 +502,8 @@ html {
 }
 
 .meal-card:hover .meal__data {
-  width: 200px;
+  width: 170px;
+  max-width: 190px;
 }
 
 .meal-card:hover .meal__price {
