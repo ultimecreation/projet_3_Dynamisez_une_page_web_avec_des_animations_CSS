@@ -192,6 +192,12 @@ html{
             margin: 0 auto;
 
             article{
+                max-width: 320px;
+                margin: 1rem!important;
+            }
+        }
+        @media screen and (min-width:992px){
+            article{
                 max-width: 430px;
                 margin: 1rem!important;
             }
