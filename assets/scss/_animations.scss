@@ -36,7 +36,7 @@
     text-align: center;
     animation: spinerUp 3s ease forwards;
    h1{
-       padding-top: 50%;
+      padding-top: 25%;
        color: white;
        
    }
@@ -62,4 +62,21 @@
 
 @keyframes spin {
     to { -webkit-transform: rotate(360deg); }
+  }
+
+  .main-page__body{
+      
+     height: 0;
+      animation: displayHomePage 3s  forwards;
+  }
+  @keyframes displayHomePage{
+      from{
+          visibility: hidden;
+      } 99%{
+        visibility: hidden;
+      }
+      to{
+          visibility: visible;
+         
+      }
   }
