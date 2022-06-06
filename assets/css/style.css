@@ -586,6 +586,12 @@ html {
   font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+  .meal-card .meal__data p {
+    max-width: 300px;
+  }
+}
+
 .meal-card .meal__toppins {
   margin-top: 0.25rem;
   font-size: 0.8rem;
@@ -634,6 +640,13 @@ html {
 .meal-card:hover .meal__data {
   width: 170px;
   max-width: 190px;
+}
+
+@media screen and (min-width: 768px) {
+  .meal-card:hover .meal__data {
+    width: 300px;
+    max-width: 300px;
+  }
 }
 
 .meal-card:hover .meal__price {

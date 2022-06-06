@@ -73,6 +73,9 @@
             font-size: 0.95rem;
             font-weight: bold;
         }
+        @media screen and (min-width:768px){
+            max-width:300px;
+        }
     }
 
     .meal__toppins {
@@ -108,11 +111,15 @@
             }
         }
     }
-    
+
     &:hover {
         .meal__data {
             width: 170px;
             max-width: 190px;
+            @media screen and (min-width:768px){
+                width:300px;
+                max-width: 300px;
+            }
         }
 
         .meal__price {
