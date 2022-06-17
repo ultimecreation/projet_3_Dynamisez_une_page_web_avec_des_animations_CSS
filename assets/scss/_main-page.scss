@@ -159,15 +159,22 @@ html {
             margin: 0;
             position: relative;
 
+
             img {
+               
                 width: 100%;
-                object-fit: cover;
+                position: relative;
+                top: -30px;
+                transform: scale(1.1,1.35);
                 height: 206px;
+                &:nth-last-of-type(2){
+                    transform: scale(1.1,2);
+                }
             }
 
             figcaption {
                 position: absolute;
-                top: 2.5rem;
+                top: 1.4rem;
                 right: 2rem;
                 display: inline-block;
                 border-radius: 3px;
@@ -191,7 +198,7 @@ html {
             }
 
             span i {
-                
+
                 &::after {
                     content: '';
                     position: relative;
@@ -235,10 +242,12 @@ html {
 .footer {
     background-color: $dark;
     padding: 1rem;
-    p{
+
+    p {
         font-family: 'Shrikhand', cursive;
         font-size: 1.2rem;
     }
+
     * {
         @extend .text--white;
     }

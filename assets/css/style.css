@@ -435,14 +435,21 @@ html {
 
 .restaurants .restaurant figure img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: relative;
+  top: -30px;
+  -webkit-transform: scale(1.1, 1.35);
+          transform: scale(1.1, 1.35);
   height: 206px;
+}
+
+.restaurants .restaurant figure img:nth-last-of-type(2) {
+  -webkit-transform: scale(1.1, 2);
+          transform: scale(1.1, 2);
 }
 
 .restaurants .restaurant figure figcaption {
   position: absolute;
-  top: 2.5rem;
+  top: 1.4rem;
   right: 2rem;
   display: inline-block;
   border-radius: 3px;
