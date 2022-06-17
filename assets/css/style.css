@@ -181,8 +181,8 @@ main {
   background: #222;
   opacity: 0.9;
   text-align: center;
-  -webkit-animation: spinerUp 3s ease forwards;
-          animation: spinerUp 3s ease forwards;
+  -webkit-animation: spinerUp 1.7s ease forwards;
+          animation: spinerUp 1.7s ease forwards;
 }
 
 .spinner h1 {
@@ -197,8 +197,8 @@ main {
   border: 5px solid #9356dc;
   border-radius: 50%;
   border-top-color: #99E2D0;
-  -webkit-animation: spin 1.5s ease-in-out infinite;
-          animation: spin 1.5s ease-in-out infinite;
+  -webkit-animation: spin .85s ease-in-out infinite;
+          animation: spin .85s ease-in-out infinite;
 }
 
 @-webkit-keyframes spinerUp {
@@ -233,8 +233,8 @@ main {
 
 .main-page__body {
   height: 0;
-  -webkit-animation: displayHomePage 3s  forwards;
-          animation: displayHomePage 3s  forwards;
+  -webkit-animation: displayHomePage 1.5s  forwards;
+          animation: displayHomePage 1.5s  forwards;
 }
 
 @-webkit-keyframes displayHomePage {

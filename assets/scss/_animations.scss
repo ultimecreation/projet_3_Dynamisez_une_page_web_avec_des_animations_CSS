@@ -34,7 +34,7 @@
     background: $dark;
     opacity: 0.9;
     text-align: center;
-    animation: spinerUp 3s ease forwards;
+    animation: spinerUp 1.7s ease forwards;
    h1{
       padding-top: 25%;
        color: $tertiary;
@@ -47,7 +47,7 @@
         border: 5px solid $primary ;
         border-radius: 50%;
         border-top-color:$tertiary ;
-        animation: spin 1.5s ease-in-out infinite;
+        animation: spin .85s ease-in-out infinite;
     }
 }
 
@@ -67,7 +67,7 @@
   .main-page__body{
       
      height: 0;
-      animation: displayHomePage 3s  forwards;
+      animation: displayHomePage 1.5s  forwards;
   }
   @keyframes displayHomePage{
       from{
