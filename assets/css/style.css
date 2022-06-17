@@ -459,13 +459,18 @@ html {
   margin: 0 0 0.5rem 0;
 }
 
+.restaurants .restaurant .restaurant__header span {
+  font-size: 1.1rem;
+}
+
 .restaurants .restaurant .restaurant__header span i::after {
   content: '';
   position: relative;
+  top: -5px;
   background: url("../icons/heart-regular.svg");
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .restaurants .restaurant .restaurant__header span i:hover::after {
@@ -501,6 +506,11 @@ html {
 .footer {
   background-color: #222;
   padding: 1rem;
+}
+
+.footer p {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
 }
 
 .footer li {

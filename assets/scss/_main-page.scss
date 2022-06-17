@@ -186,18 +186,20 @@ html {
             }
 
             span {
-                @extend .text--grey
+                @extend .text--grey;
+                font-size: 1.1rem;
             }
 
             span i {
-
+                
                 &::after {
                     content: '';
                     position: relative;
+                    top: -5px;
                     background: url("../icons/heart-regular.svg");
                     display: block;
-                    width: 20px;
-                    height: 20px;
+                    width: 30px;
+                    height: 30px;
                 }
 
                 &:hover::after {
@@ -233,7 +235,10 @@ html {
 .footer {
     background-color: $dark;
     padding: 1rem;
-
+    p{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.2rem;
+    }
     * {
         @extend .text--white;
     }
