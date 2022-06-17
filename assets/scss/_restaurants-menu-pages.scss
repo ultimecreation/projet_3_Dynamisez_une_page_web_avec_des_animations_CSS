@@ -14,7 +14,7 @@
 .menu {
     padding: 1rem;
     position: relative;
-    background: white;
+    background: $grey-xlight;
     border-radius: 25px 25px 0 0;
     top: -2rem;
 
@@ -50,6 +50,7 @@
 
 .meal-card {
     position: relative;
+    background: white;
     padding: 0 0 0 1rem;
     margin: 1rem 0;
     box-shadow: 1px 4px 6px $grey-dark;
