@@ -460,6 +460,7 @@ html {
 
 .restaurants .restaurant .restaurant__header {
   padding: 1rem 1.5rem;
+  background: white;
 }
 
 .restaurants .restaurant .restaurant__header h3 {
