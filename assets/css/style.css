@@ -281,34 +281,40 @@ html {
   color: #222;
 }
 
-.hero__search {
+.hero {
   background: #e9e9e9;
+}
+
+.hero__search {
+  position: relative;
+  right: -15px;
   margin: 0 auto;
 }
 
-.hero__search > i {
+.hero__search i {
   padding: 0.8rem 0 1rem 1rem;
 }
 
-.hero__search > input {
+.hero__search input {
   background: #e9e9e9;
   border: none;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.hero__search > input::-webkit-input-placeholder {
+.hero__search input::-webkit-input-placeholder {
   padding: 1rem;
 }
 
-.hero__search > input:-ms-input-placeholder {
+.hero__search input:-ms-input-placeholder {
   padding: 1rem;
 }
 
-.hero__search > input::-ms-input-placeholder {
+.hero__search input::-ms-input-placeholder {
   padding: 1rem;
 }
 
-.hero__search > input::placeholder {
+.hero__search input::placeholder {
   padding: 1rem;
 }
 
@@ -320,7 +326,7 @@ html {
 
 .hero__cta h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 0rem;
 }
 
@@ -355,6 +361,10 @@ html {
 .functioning {
   padding: 1rem;
   margin: 2rem auto;
+}
+
+.functioning header h2 {
+  font-size: 1.7rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -401,8 +411,12 @@ html {
 }
 
 .restaurants {
-  padding: 4rem 1rem;
+  padding: 2.5rem 1rem;
   background: #f1f1f1;
+}
+
+.restaurants header h2 {
+  font-size: 1.7rem;
 }
 
 .restaurants .restaurant {
