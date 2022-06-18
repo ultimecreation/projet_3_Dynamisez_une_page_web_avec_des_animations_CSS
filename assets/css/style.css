@@ -556,6 +556,7 @@ html {
 .top-image {
   margin: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 .top-image img {
