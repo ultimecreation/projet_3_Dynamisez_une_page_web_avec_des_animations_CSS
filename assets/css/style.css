@@ -443,21 +443,21 @@ html {
 .restaurants .restaurant figure img {
   width: 100%;
   position: relative;
-  top: -30px;
-  -webkit-transform: scale(1.1, 1.35);
-          transform: scale(1.1, 1.35);
+  top: -35px;
+  -webkit-transform: scale(1.03, 1.35);
+          transform: scale(1.03, 1.35);
   height: 206px;
 }
 
 .restaurants .restaurant figure img.custom {
-  -webkit-transform: scale(1, 2.35);
-          transform: scale(1, 2.35);
+  -webkit-transform: scale(1.03, 2.5);
+          transform: scale(1.03, 2.5);
 }
 
 .restaurants .restaurant figure figcaption {
   position: absolute;
-  top: 1.4rem;
-  right: 2rem;
+  top: 1.2rem;
+  right: 0.9rem;
   display: inline-block;
   border-radius: 3px;
   padding: 0.375rem 0.75rem;
@@ -484,8 +484,8 @@ html {
   top: -5px;
   background: url("../icons/heart-regular.svg");
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .restaurants .restaurant .restaurant__header span i:hover::after {
@@ -565,8 +565,8 @@ html {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.05);
+          transform: scale(1.1, 1.05);
 }
 
 /* MENU */
