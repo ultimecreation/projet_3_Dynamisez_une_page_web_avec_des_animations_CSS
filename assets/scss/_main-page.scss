@@ -164,19 +164,21 @@ html {
         figure {
             margin: 0;
             position: relative;
-
+            overflow: hidden;
 
             img {
-               
+              
                 width: 100%;
                 position: relative;
                 top: -30px;
                 transform: scale(1.1,1.35);
                 height: 206px;
-                &:nth-last-of-type(2){
-                    transform: scale(1.1,2);
+                &.custom{
+                    transform: scale(1,2.35);
+                    
                 }
-            }
+               
+            } 
 
             figcaption {
                 position: absolute;
@@ -189,6 +191,7 @@ html {
                 color: rgb(4, 99, 50);
 
             }
+            
         }
 
         .restaurant__header {

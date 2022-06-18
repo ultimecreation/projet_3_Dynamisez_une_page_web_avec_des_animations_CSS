@@ -437,6 +437,7 @@ html {
 .restaurants .restaurant figure {
   margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .restaurants .restaurant figure img {
@@ -448,9 +449,9 @@ html {
   height: 206px;
 }
 
-.restaurants .restaurant figure img:nth-last-of-type(2) {
-  -webkit-transform: scale(1.1, 2);
-          transform: scale(1.1, 2);
+.restaurants .restaurant figure img.custom {
+  -webkit-transform: scale(1, 2.35);
+          transform: scale(1, 2.35);
 }
 
 .restaurants .restaurant figure figcaption {
