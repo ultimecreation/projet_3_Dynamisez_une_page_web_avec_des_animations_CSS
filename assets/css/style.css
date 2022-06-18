@@ -171,6 +171,7 @@ main {
   }
 }
 
+/* loader */
 .spinner {
   position: absolute;
   top: 0;
@@ -201,6 +202,7 @@ main {
           animation: spin .85s ease-in-out infinite;
 }
 
+/* toggle loader visibility */
 @-webkit-keyframes spinerUp {
   from {
     visibility: visible;
@@ -209,7 +211,6 @@ main {
     visibility: hidden;
   }
 }
-
 @keyframes spinerUp {
   from {
     visibility: visible;
@@ -219,12 +220,12 @@ main {
   }
 }
 
+/* loader animation */
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
@@ -626,6 +627,31 @@ html {
   cursor: pointer;
 }
 
+.meal-card:hover .meal__data {
+  width: 170px;
+  max-width: 190px;
+}
+
+@media screen and (min-width: 768px) {
+  .meal-card:hover .meal__data {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+.meal-card:hover .meal__price {
+  right: 0;
+}
+
+.meal-card:hover .meal__price .icon {
+  right: 0;
+}
+
+.meal-card:hover .meal__price .icon i {
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+
 .meal-card p {
   margin: 0;
 }
@@ -695,31 +721,6 @@ html {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-}
-
-.meal-card:hover .meal__data {
-  width: 170px;
-  max-width: 190px;
-}
-
-@media screen and (min-width: 768px) {
-  .meal-card:hover .meal__data {
-    width: 300px;
-    max-width: 300px;
-  }
-}
-
-.meal-card:hover .meal__price {
-  right: 0;
-}
-
-.meal-card:hover .meal__price .icon {
-  right: 0;
-}
-
-.meal-card:hover .meal__price .icon i {
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
 }
 
 @media screen and (min-width: 768px) {

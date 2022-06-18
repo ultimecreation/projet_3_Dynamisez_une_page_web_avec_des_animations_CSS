@@ -23,7 +23,7 @@
 
     }
 }
-
+/* loader */
 .spinner{
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
         animation: spin .85s ease-in-out infinite;
     }
 }
-
+/* toggle loader visibility */
 @keyframes spinerUp{
     from{
         visibility: visible;
@@ -59,7 +59,7 @@
         
     }
 }
-
+/* loader animation */
 @keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
