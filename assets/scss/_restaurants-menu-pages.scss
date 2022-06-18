@@ -4,9 +4,12 @@
     width: 100%;
 
     img {
+        position: relative;
+        top: 10px;
         width: 100%;
         height: 260px;
         object-fit: cover;
+        transform: scale(1.1,1.1);
     }
 }
 
@@ -18,18 +21,26 @@
     border-radius: 25px 25px 0 0;
     top: -2rem;
 
-    header span i {
-        &::after {
-            content: '';
-            position: relative;
-            background: url("../icons/heart-regular.svg");
-            display: block;
-            width: 30px;
-            height: 30px;
+    header {
+        h1{
+            margin-left: 0.5rem;
+            font-size: 1.7rem;
         }
-
-        &:hover::after {
-            background: url("../icons/heart-solid.svg");
+        span i {
+            &::after {
+                content: '';
+                position: relative;
+                top: -5px;
+                right:10px;
+                background: url("../icons/heart-regular.svg");
+                display: block;
+                width: 30px;
+                height: 30px;
+            }
+    
+            &:hover::after {
+                background: url("../icons/heart-solid.svg");
+            }
         }
     }
 }
@@ -43,6 +54,7 @@
 
         h2 {
             margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -67,8 +79,9 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 240px;
+        max-width: 260px;
         transition: width 0.5s ease;
+        font-size: .9rem;
 
         &:first-child {
             font-size: 0.95rem;
@@ -86,12 +99,13 @@
 
     .meal__price {
         position: relative;
-        right: -54px;
+        right: -64px;
+       
         font-weight: bold;
         transition: right 0.5s ease;
 
         p {
-            margin-right: 1rem;
+            margin-right: 1.2rem; 
             margin-bottom: -1.5rem;
         }
 
@@ -101,6 +115,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width:2rem;
 
             i {
                 background: white;
