@@ -72,17 +72,19 @@
     height: 100%;
     overflow: hidden;
     cursor: pointer;
-
     &:hover {
-        .meal__data {
+        .meal__data{
             width: 170px;
-            max-width: 190px;
+            p{
+            // width: 170px;
+            // max-width: 190px;
 
             @media screen and (min-width:768px) {
                 width: 300px;
                 max-width: 300px;
             }
         }
+        } 
 
         .meal__price {
             right: 0;
@@ -98,27 +100,33 @@
 
     }
 
+    
+
     p {
         margin: 0;
     }
 
-    .meal__data p {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 260px;
-        transition: width 0.5s ease;
-        font-size: .9rem;
+    .meal__data{
+        width:280px;
+        transition: width 1s ease-in-out;
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 260px;
+            // transition: width 1s ease-in-out;
+            font-size: .9rem;
 
-        &:first-child {
-            font-size: 0.95rem;
-            font-weight: bold;
-        }
+            &:first-child {
+                font-size: 0.95rem;
+                font-weight: bold;
+            }
 
-        @media screen and (min-width:768px) {
-            max-width: 300px;
+            @media screen and (min-width:768px) {
+                max-width: 300px;
+            }
         }
-    }
+    } 
 
     .meal__toppins {
         margin-top: 0.25rem;
@@ -130,7 +138,7 @@
         right: -64px;
 
         font-weight: bold;
-        transition: right 0.5s ease;
+        transition: right 1s ease-in-out;
 
         p {
             margin-right: 1.2rem;
@@ -151,13 +159,12 @@
                 border-radius: 50%;
                 padding: 0.25rem;
                 transform: rotateZ(-180deg);
-                transition: transform 1s;
+                transition: transform 1s ease-in-out;
             }
         }
     }
 
-
-
+    
     @media screen and (min-width:768px) {
         max-width: 700px;
         margin: 1.5rem auto;

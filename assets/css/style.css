@@ -629,11 +629,10 @@ html {
 
 .meal-card:hover .meal__data {
   width: 170px;
-  max-width: 190px;
 }
 
 @media screen and (min-width: 768px) {
-  .meal-card:hover .meal__data {
+  .meal-card:hover .meal__data p {
     width: 300px;
     max-width: 300px;
   }
@@ -656,13 +655,17 @@ html {
   margin: 0;
 }
 
+.meal-card .meal__data {
+  width: 280px;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
 .meal-card .meal__data p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 260px;
-  -webkit-transition: width 0.5s ease;
-  transition: width 0.5s ease;
   font-size: .9rem;
 }
 
@@ -686,8 +689,8 @@ html {
   position: relative;
   right: -64px;
   font-weight: bold;
-  -webkit-transition: right 0.5s ease;
-  transition: right 0.5s ease;
+  -webkit-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
 }
 
 .meal-card .meal__price p {
@@ -717,10 +720,10 @@ html {
   padding: 0.25rem;
   -webkit-transform: rotateZ(-180deg);
           transform: rotateZ(-180deg);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
